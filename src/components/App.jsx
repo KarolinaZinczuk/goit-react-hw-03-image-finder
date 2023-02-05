@@ -50,9 +50,9 @@ export class App extends Component {
           })
         );
         
-        if (!images.hits.length) {
+         if (!images.hits.length) {
           Notiflix.Notify.failure(
-            `Sorry, there are no images matching your search query. Please try again.`
+            'Sorry, there are no images matching your search query. Please try again.'
           );
         }
 
@@ -83,7 +83,7 @@ export class App extends Component {
   };
 
   handleLoadMore = () => {
-    this.setState(prevState => ({ page: prevState.page = 1 }));
+    this.setState(prevState => ({ page: prevState.page + 1 }));
   };
 
   toggleModal = (modalImg = null, tags = "") => {
