@@ -23,8 +23,7 @@ class Modal extends Component {
     if (event.currentTarget === event.target) {
       return this.props.onCloseModal();
     }
-  };   
-
+  };  
     render() {
         const { modalImg, tags } = this.props;
         return (
