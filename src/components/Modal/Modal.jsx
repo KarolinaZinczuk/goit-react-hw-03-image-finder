@@ -24,6 +24,7 @@ class Modal extends Component {
       return this.props.onCloseModal();
     }
   };  
+  
     render() {
         const { modalImg, tags } = this.props;
         return (
